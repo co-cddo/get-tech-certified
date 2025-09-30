@@ -1,37 +1,83 @@
-# Get Tech Certified
+# Get Tech Certified - GOV.UK Eleventy Version
 
-This is a temporary static site for the Get Tech Certified program, offering free certification pathways for civil and public servants across various digital and technology areas.
+[![Deploy to GitHub Pages](https://github.com/appvia/gds-gtc-demo/actions/workflows/deploy.yml/badge.svg)](https://github.com/appvia/gds-gtc-demo/actions/workflows/deploy.yml)
 
-## Overview
+A clean, modern implementation of the Get Tech Certified site using the GOV.UK Eleventy plugin.
 
-During Autumn 2025, all civil and public servants can access 200+ free learning and certification pathways across key digital and technology areas. This offer is made possible through partnerships with 16 leading tech providers.
+## Benefits over WordPress HTML Export
 
-## Site Structure
+✅ **No tracking scripts** - Clean, secure implementation  
+✅ **No phishing warnings** - Fresh codebase without suspicious elements  
+✅ **GOV.UK compliant** - Automatic design system compliance  
+✅ **Easy to maintain** - Markdown content instead of HTML  
+✅ **Better accessibility** - Built-in GOV.UK standards  
+✅ **Clean URLs** - No `.html` extensions needed  
 
-- `index.html` - Main landing page with program overview
-- `cloud.html` - Cloud & Platform Technologies certification information
-- `cyber-security.html` - Cyber Security certification details
-- `data.html` - Data certification pathways
-- `finops.html` - FinOps certification information
-- `machine-learning-ai.html` - Machine Learning & AI certifications
-- `quantum-computing.html` - Quantum Computing certification details
-- `software-engineering.html` - Software Engineering certifications
-- `faqs.html` - Frequently Asked Questions
-
-## Local Development
-
-To test the site locally:
+## Quick Start
 
 ```bash
-python3 -m http.server 8000
+# Install dependencies
+npm install
+
+# Build the site
+npm run build
+
+# Serve locally at http://localhost:8080
+npm run serve
 ```
 
-Then visit http://localhost:8000
+## Project Structure
+
+```
+app/
+├── index.md           # Homepage
+├── posts/            # Certification area pages
+│   ├── cloud-platform.md
+│   ├── cyber-security.md
+│   ├── data.md
+│   ├── finops.md
+│   ├── machine-learning-ai.md
+│   ├── quantum-computing.md
+│   ├── software-engineering.md
+│   └── faqs.md
+└── _data/            # Site configuration
+
+_site/               # Built static site (for deployment)
+```
+
+## Adding Content
+
+1. Create Markdown files in `app/posts/`
+2. Use frontmatter for metadata:
+   ```yaml
+   ---
+   title: Page Title
+   description: Page description
+   date: 2025-10-01
+   ---
+   ```
+3. Write content in Markdown
+4. Tables are supported for vendor certifications
 
 ## Deployment
 
-This site is deployed via GitHub Pages. Any commits to the `main` branch will automatically deploy to the live site.
+The `_site` folder contains the built static site ready for GitHub Pages deployment.
 
-## Notes
+## Migration Status
 
-This is a temporary solution while the official gov.uk publishing is being resolved. The content has been extracted and cleaned from WordPress exports to create a static site suitable for GitHub Pages hosting.
+- ✅ Homepage
+- ✅ Cloud & Platform Technologies  
+- ✅ FAQs
+- ✅ Cyber Security
+- ✅ Data
+- ✅ FinOps
+- ✅ Machine Learning & AI
+- ✅ Quantum Computing
+- ✅ Software Engineering
+
+## Next Steps
+
+1. Deploy to GitHub Pages or preferred hosting platform
+2. Set up GitHub Actions for automatic deployment
+3. Configure custom domain if needed
+4. Test all vendor links are working correctly
