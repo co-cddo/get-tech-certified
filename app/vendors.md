@@ -100,7 +100,7 @@ description: Choose a vendor
         <p class="govuk-body-s">Azure cloud certifications</p>
       </div>
       <div class="vendor-item">
-        <a href="https://www.mongodb.com/resources/webinars/mongodb-and-google-public-sector/get-tech-certified-with-mongodb" target="_blank" class="vendor-logo-link">
+        <a href="https://events.mongodb.com/essentialstoexpert" target="_blank" class="vendor-logo-link">
           <img src="/vendors/vmdc-learn-get-tech-certified-vendor-mongo-db.png" alt="MongoDB" class="vendor-logo">
         </a>
         <p class="govuk-body-s">Database certifications</p>
