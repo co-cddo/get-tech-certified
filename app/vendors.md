@@ -76,7 +76,7 @@ description: Choose a vendor
         <p class="govuk-body-s">Google Cloud Platform</p>
       </div>
       <div class="vendor-item">
-        <a href="https://www.hashicorp.com/campaign/24q4-emea-ukic-gds-skill-up-campaign" target="_blank" class="vendor-logo-link">
+        <a href="https://livesend.ibm.com/ls/527f279d-a11e-4959-8d26-6cb5ffa1b669/i9YeD-fEB8TCL_YQ#/" target="_blank" class="vendor-logo-link">
           <img src="/vendors/vmdc-learn-get-tech-certified-vendor-hashicorp.png" alt="HashiCorp" class="vendor-logo">
         </a>
         <p class="govuk-body-s">Infrastructure automation</p>
